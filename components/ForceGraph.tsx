@@ -10,7 +10,7 @@ const ForceGraph = ({ nodes, links }: ForceGraphProps) => {
 
   useEffect(() => {
     const width = 600;
-    const height = 400;
+    const height = window.innerHeight;    
 
     const svg = d3
       .select(svgRef.current)

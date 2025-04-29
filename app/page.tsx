@@ -4,18 +4,30 @@ import { LinkData, NodeData } from "@/types";
 import { useState } from "react";
 
 const nodes: NodeData[] = [
-  { id: "A" },
-  { id: "B" },
-  { id: "C" },
-  { id: "D" },
-  { id: "X" },
+  { id: 'Mani' },
+  { id: 'Prudhvi' },
+  { id: 'Charlie' },
+  { id: 'Georgios' },
+  { id: 'Eva' },
+  { id: 'Frank' },
+  { id: 'Grace' },
+  { id: 'Hannah' },
+  { id: 'Ivan' },
+  { id: 'Julia' },
 ];
 
 const links: LinkData[] = [
-  { source: "A", target: "B" },
-  { source: "A", target: "C" },
-  { source: "C", target: "D" },
-  { source: "C", target: "X" },
+  { source: 'Mani', target: 'Prudhvi' },
+  { source: 'Mani', target: 'Charlie' },
+  { source: 'Prudhvi', target: 'Georgios' },
+  { source: 'Charlie', target: 'Eva' },
+  { source: 'Georgios', target: 'Frank' },
+  { source: 'Eva', target: 'Grace' },
+  { source: 'Frank', target: 'Hannah' },
+  { source: 'Grace', target: 'Ivan' },
+  { source: 'Hannah', target: 'Julia' },
+  { source: 'Julia', target: 'Mani' },
+  { source: 'Ivan', target: 'Charlie' },
 ];
 
 export default function Home() {

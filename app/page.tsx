@@ -41,8 +41,7 @@ export default function Home() {
   const handleGenerate = () => {
     try {
       const parsedNodes = JSON.parse(nodesString);
-      const parsedLinks = JSON.parse(linksString);
-      debugger;
+      const parsedLinks = JSON.parse(linksString);      
       setFinalData({
         nodes: parsedNodes,
         links: parsedLinks,
@@ -99,8 +98,7 @@ export default function Home() {
         </div>
         <div>
           <h1>D3 Force</h1>
-          <ForceGraph
-            key={JSON.stringify(finalData)}
+          <ForceGraph            
             nodes={finalData.nodes}
             links={finalData.links}
           />

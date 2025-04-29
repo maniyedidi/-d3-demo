@@ -92,7 +92,7 @@ const ForceGraph = ({ nodes, links }: ForceGraphProps) => {
           d.fy = null;
         });
     }
-  }, []);
+  }, [nodes, links]);
 
   return <svg ref={svgRef}></svg>;
 };

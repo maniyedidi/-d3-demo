@@ -3,7 +3,13 @@ import ForceGraph from "@/components/ForceGraph";
 import { LinkData, NodeData } from "@/types";
 import { useState } from "react";
 
-const nodes: NodeData[] = [{ id: "A" }, { id: "B" }, { id: "C" }, { id: "D" },{ id: "X" }];
+const nodes: NodeData[] = [
+  { id: "A" },
+  { id: "B" },
+  { id: "C" },
+  { id: "D" },
+  { id: "X" },
+];
 
 const links: LinkData[] = [
   { source: "A", target: "B" },
@@ -39,7 +45,7 @@ export default function Home() {
     <main className="bg-gray-100 m-7">
       <div className="grid grid-cols-2">
         <div>
-          <h1>Enter Nodes String</h1>
+          <h1 className="text-black">Enter Nodes String</h1>
           <textarea
             className="w-full h-64 p-2 border rounded bg-white text-black"
             placeholder="Paste JSON string here"
@@ -47,7 +53,7 @@ export default function Home() {
             onChange={(e) => setNodesString(e.target.value)}
           />
 
-          <h1>Enter Links Data</h1>
+          <h1 className="text-black">Enter Links Data</h1>
           <textarea
             className="w-full h-64 p-2 border rounded bg-white text-black"
             placeholder="Paste JSON string here"
